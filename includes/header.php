@@ -10,10 +10,17 @@
     
     <style>
         .hero-section {
-            background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+            /* Capa transparente oscura neutra sobre la imagen (sin tinte azul) */
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.65), 
+                rgba(0, 0, 0, 0.65)
+            ), 
+            url('img/banner.jpg') no-repeat center center;
+            background-size: cover;
         }
+
         .card-course {
-            transition: transform 0.2s ease, shadow 0.2s ease;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
         .card-course:hover {
             transform: translateY(-4px);

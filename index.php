@@ -4,17 +4,28 @@ include 'includes/header.php';
 include 'includes/navbar.php';
 ?>
 
-<header class="hero-section text-white py-5">
-    <div class="container py-4">
+<!-- SECCIÓN: HERO / BIENVENIDA -->
+<header class="hero-section text-white py-5 shadow-sm">
+    <div class="container py-5">
         <div class="row align-items-center g-4">
             <div class="col-lg-7">
-                <h1 class="display-5 fw-bold mb-3">Impulsa tu carrera con cursos especializados</h1>
-                <p class="lead mb-4 opacity-90">Aprende con proyectos reales y obtén certificación oficial en áreas de alta demanda laboral.</p>
-                <a href="#cursos" class="btn btn-light btn-lg fw-semibold text-primary px-4 me-2 shadow-sm">Ver Cursos</a>
-                <a href="#inscripcion" class="btn btn-outline-light btn-lg px-4">Inscribirme</a>
+                <span class="badge bg-primary px-3 py-2 fw-bold text-uppercase mb-3 shadow-sm">
+                    Inscripciones Abiertas
+                </span>
+                <h1 class="display-4 fw-bold mb-3">Impulsa tu carrera con cursos especializados</h1>
+                <p class="lead mb-4 opacity-90 fs-5">Aprende con proyectos reales y obtén certificación oficial en áreas de alta demanda laboral.</p>
+                <div class="d-flex flex-wrap gap-2">
+                    <a href="#cursos" class="btn btn-primary btn-lg fw-bold px-4 shadow-sm">
+                        <i class="bi bi-grid-fill me-2"></i>Ver Cursos
+                    </a>
+                    <a href="#inscripcion" class="btn btn-outline-light btn-lg px-4 fw-semibold">
+                        Inscribirme
+                    </a>
+                </div>
             </div>
             <div class="col-lg-5">
-                <div class="bg-white text-dark p-4 rounded-3 shadow">
+                <!-- Formulario de conversión directa -->
+                <div class="bg-white text-dark p-4 rounded-4 shadow-lg border">
                     <h4 class="fw-bold mb-1">Inscripción Rápida</h4>
                     <p class="text-muted small mb-3">Reserva tu cupo en menos de un minuto.</p>
                     <form action="procesar_inscripcion.php" method="POST">
@@ -35,7 +46,9 @@ include 'includes/navbar.php';
                                 <option value="3">Administración de Redes y Servidores</option>
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100 fw-bold py-2">Registrarme Ahora</button>
+                        <button type="submit" class="btn btn-primary w-100 fw-bold py-2 shadow-sm">
+                            Registrarme Ahora
+                        </button>
                     </form>
                 </div>
             </div>
